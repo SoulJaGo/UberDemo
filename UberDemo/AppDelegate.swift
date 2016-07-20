@@ -16,7 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.showGuidePage()
         return true
+    }
+    
+    func showGuidePage()
+    {
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let page = GuidePage(nibName: "GuidePage", bundle: nil)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = page;
     }
 
     func applicationWillResignActive(application: UIApplication) {

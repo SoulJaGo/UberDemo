@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuidePage" customModule="UberDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="backImageView" destination="owy-Wb-9kq" id="XcH-cY-0AT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-067.png" translatesAutoresizingMaskIntoConstraints="NO" id="owy-Wb-9kq">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="owy-Wb-9kq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1ru-7Z-2DX"/>
+                <constraint firstItem="owy-Wb-9kq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4c5-cq-S3l"/>
+                <constraint firstItem="owy-Wb-9kq" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="WMT-yB-9j1"/>
+                <constraint firstItem="owy-Wb-9kq" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="l9O-3G-Rtv"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="owy-Wb-9kq"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="1ru-7Z-2DX"/>
+                    <exclude reference="4c5-cq-S3l"/>
+                    <exclude reference="WMT-yB-9j1"/>
+                    <exclude reference="l9O-3G-Rtv"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="owy-Wb-9kq"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="1ru-7Z-2DX"/>
+                    <include reference="4c5-cq-S3l"/>
+                    <include reference="WMT-yB-9j1"/>
+                    <include reference="l9O-3G-Rtv"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo-067.png" width="277" height="277"/>
+    </resources>
+</document>
