@@ -519,6 +519,7 @@
 		961ED6FA1D3E539A0005AE11 /* YinLian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961ED50F1D3E539A0005AE11 /* YinLian@2x.png */; };
 		961ED7031D3E597F0005AE11 /* GuidePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961ED7011D3E597F0005AE11 /* GuidePage.swift */; };
 		961ED7041D3E597F0005AE11 /* GuidePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961ED7021D3E597F0005AE11 /* GuidePage.xib */; };
+		96200C221D3FAF8A00E8388C /* welcome_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96200C211D3FAF8A00E8388C /* welcome_video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1036,6 +1037,7 @@
 		961ED50F1D3E539A0005AE11 /* YinLian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YinLian@2x.png"; sourceTree = "<group>"; };
 		961ED7011D3E597F0005AE11 /* GuidePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidePage.swift; sourceTree = "<group>"; };
 		961ED7021D3E597F0005AE11 /* GuidePage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuidePage.xib; path = ../../View/Page/GuidePage.xib; sourceTree = "<group>"; };
+		96200C211D3FAF8A00E8388C /* welcome_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcome_video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1784,6 +1786,7 @@
 		961ED7051D3E5B340005AE11 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				96200C211D3FAF8A00E8388C /* welcome_video.mp4 */,
 			);
 			name = Video;
 			path = Vedio;
@@ -2249,6 +2252,7 @@
 				961ED5921D3E539A0005AE11 /* HU.png in Resources */,
 				961ED6851D3E539A0005AE11 /* logo-030@3x.png in Resources */,
 				961ED62F1D3E539A0005AE11 /* logo-002.png in Resources */,
+				96200C221D3FAF8A00E8388C /* welcome_video.mp4 in Resources */,
 				961ED62E1D3E539A0005AE11 /* logo-001@3x.png in Resources */,
 				961ED5471D3E539A0005AE11 /* BH.png in Resources */,
 				961ED6D41D3E539A0005AE11 /* logo-057.png in Resources */,

@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuidePage" customModule="UberDemo" customModuleProvider="target">
             <connections>
                 <outlet property="backImageView" destination="owy-Wb-9kq" id="XcH-cY-0AT"/>
+                <outlet property="backView" destination="1zf-P7-DXX" id="oJW-Ww-ZXR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,19 +21,32 @@
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-P7-DXX">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="owy-Wb-9kq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1ru-7Z-2DX"/>
                 <constraint firstItem="owy-Wb-9kq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4c5-cq-S3l"/>
+                <constraint firstItem="1zf-P7-DXX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FYN-Ze-Snr"/>
+                <constraint firstItem="1zf-P7-DXX" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="I4l-C6-8xK"/>
+                <constraint firstItem="1zf-P7-DXX" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="PEp-XX-RXC"/>
                 <constraint firstItem="owy-Wb-9kq" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="WMT-yB-9j1"/>
                 <constraint firstItem="owy-Wb-9kq" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="l9O-3G-Rtv"/>
+                <constraint firstItem="1zf-P7-DXX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lgD-fW-iEF"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="owy-Wb-9kq"/>
+                    <exclude reference="1zf-P7-DXX"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="FYN-Ze-Snr"/>
+                    <exclude reference="I4l-C6-8xK"/>
+                    <exclude reference="PEp-XX-RXC"/>
+                    <exclude reference="lgD-fW-iEF"/>
                     <exclude reference="1ru-7Z-2DX"/>
                     <exclude reference="4c5-cq-S3l"/>
                     <exclude reference="WMT-yB-9j1"/>
@@ -42,8 +56,13 @@
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="owy-Wb-9kq"/>
+                    <include reference="1zf-P7-DXX"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="FYN-Ze-Snr"/>
+                    <include reference="I4l-C6-8xK"/>
+                    <include reference="PEp-XX-RXC"/>
+                    <include reference="lgD-fW-iEF"/>
                     <include reference="1ru-7Z-2DX"/>
                     <include reference="4c5-cq-S3l"/>
                     <include reference="WMT-yB-9j1"/>

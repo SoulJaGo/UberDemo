@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,40 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="DWc-Ej-qYs">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DWc-Ej-qYs" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="CfE-gH-QZ7"/>
+                            <constraint firstItem="DWc-Ej-qYs" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="KOm-jN-kST"/>
+                            <constraint firstItem="DWc-Ej-qYs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="atd-5q-vfB"/>
+                            <constraint firstItem="DWc-Ej-qYs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lO0-na-7cA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="DWc-Ej-qYs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CfE-gH-QZ7"/>
+                                <exclude reference="KOm-jN-kST"/>
+                                <exclude reference="atd-5q-vfB"/>
+                                <exclude reference="lO0-na-7cA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="DWc-Ej-qYs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CfE-gH-QZ7"/>
+                                <include reference="KOm-jN-kST"/>
+                                <include reference="atd-5q-vfB"/>
+                                <include reference="lO0-na-7cA"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +57,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Launch" width="320" height="568"/>
+    </resources>
 </document>
